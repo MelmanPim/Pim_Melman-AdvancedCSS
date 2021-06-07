@@ -1,0 +1,19 @@
+$backgroundBody: #c3cfe2;
+$primaryText: rgb(85, 85, 85);
+$backgroundFooter: #686de0;
+
+$gridColumn: 325px;
+$primaryFont: Arial, Helvetica, sans-serif;
+
+@mixin centerText {
+    width: 100%;
+    text-align: center;
+  }
+
+@mixin centerAbsolute {
+    position: absolute; 
+        left: 0; 
+        right: 0; 
+        top: 0;
+        bottom: 0;
+  }

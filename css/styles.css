@@ -1,0 +1,188 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  background-color: #c3cfe2;
+  padding: 1em;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 325px;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+.testimonial > div {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 325px;
+  background: #293245;
+  transition: 400ms ease-in-out;
+}
+.testimonial > div:hover {
+  opacity: 1;
+}
+.testimonial > div button {
+  width: 120px;
+  height: 40px;
+  border-radius: 0.25em;
+  border: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.testimonial {
+  max-width: 325px;
+  background-color: white;
+  border-radius: 1em;
+  box-shadow: 0 5px 10px #4b5999;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.testimonial p {
+  color: #555555;
+  padding: 2em;
+  margin: 0;
+  margin-bottom: 1.5em;
+  line-height: 1.8em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.testimonial footer {
+  background-color: #686de0;
+  border-radius: 0 0 1em 1em;
+  padding-top: 3.5em;
+  height: 150px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.testimonial footer img {
+  border-radius: 100%;
+  width: 110px;
+  height: 110px;
+  border: 0.3em solid white;
+  background-color: white;
+  position: absolute;
+  top: -50px;
+  left: 107.5px;
+}
+.testimonial footer h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-bottom: 0.5em;
+}
+.testimonial footer a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #b3b7e9;
+  font-weight: normal;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.testimonial footer a:hover {
+  color: white;
+}
+
+/* SOCIAL MEDIA NAVIGATION */
+.socialNavigation {
+  position: absolute;
+  top: 10em;
+  right: -14em;
+  padding: 0;
+  margin: 0;
+}
+.socialNavigation ul {
+  padding: 0;
+  margin: 0;
+}
+.socialNavigation li {
+  width: 17em;
+  height: 3em;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1em 0;
+  padding-left: 1em;
+  transition: 400ms ease-in;
+}
+.socialNavigation li a {
+  color: white;
+}
+.socialNavigation li:hover {
+  transform: translate(-12em, 0);
+}
+.socialNavigation span::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 900;
+  color: white;
+  padding-right: 1.5em;
+}
+.socialNavigation .blog {
+  background-color: #e17b77;
+}
+.socialNavigation .blog .iconBlog::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+}
+.socialNavigation .twitter {
+  background-color: #00aced;
+}
+.socialNavigation .twitter .iconTwitter::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "";
+}
+.socialNavigation .linkedin {
+  background-color: #007bb6;
+}
+.socialNavigation .linkedin .iconLinkedin::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "";
+}
+.socialNavigation .facebook {
+  background-color: #3b5998;
+}
+.socialNavigation .facebook .iconFacebook::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "";
+}
+.socialNavigation .github {
+  background-color: #333;
+}
+.socialNavigation .github .iconGithub::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "";
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+  .gridContainer {
+    grid-template-columns: 325px 325px;
+    grid-template-rows: auto auto auto;
+  }
+}
+@media (min-width: 1024px) {
+  .gridContainer {
+    grid-template-columns: 325px 325px 325px;
+    grid-template-rows: auto auto;
+  }
+}/*# sourceMappingURL=styles.css.map */
